@@ -1,0 +1,22 @@
+<div class="board">
+  <div class="column" *ngFor="let col of columns">
+    
+    <div class="column-header">
+      <h3>{{ col }}</h3>
+      <button (click)="addTask(col)">+</button>
+    </div>
+
+    <div
+      cdkDropList
+      [cdkDropListData]="tasks[col]"
+      (cdkDropListDropped)="drop($event, col)"
+      class="task-list"
+    >
+      <div class="task-card" *ngFor="let t of tasks[col]" cdkDrag>
+        <h4>{{ t.title }}</h4>
+        <p>{{ t.desc }}</p>
+      </div>
+    </div>
+
+  </div>
+</div>

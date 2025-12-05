@@ -1,0 +1,10 @@
+<h3>Add Task</h3>
+
+<input type="text" placeholder="Task ID" [(ngModel)]="id" />
+<input type="text" placeholder="Task Title" [(ngModel)]="title" />
+<textarea placeholder="Description" [(ngModel)]="desc"></textarea>
+
+<div class="btn-row">
+  <button (click)="save()">Add</button>
+  <button (click)="dialogRef.close()">Cancel</button>
+</div>

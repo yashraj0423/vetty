@@ -1,0 +1,36 @@
+.board {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.column {
+  width: 22%;
+  background: #f1f1f1;
+  padding: 15px;
+  border-radius: 8px;
+
+  .column-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    button {
+      background: #0284c7;
+      color: white;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      border: none;
+      cursor: pointer;
+    }
+  }
+
+  .task-card {
+    background: #fff;
+    padding: 12px;
+    border-radius: 6px;
+    margin-top: 10px;
+    box-shadow: 0 0 5px #ccc;
+  }
+}

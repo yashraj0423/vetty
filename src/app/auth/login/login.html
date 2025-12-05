@@ -1,0 +1,10 @@
+<div class="login-container">
+  <h2>Log in</h2>
+
+  <input type="text" placeholder="Username" [(ngModel)]="email" />
+  <input type="password" placeholder="Password" [(ngModel)]="password" />
+
+  <button (click)="submitLogin()">Log in</button>
+
+  <p class="error" *ngIf="error">{{ error }}</p>
+</div>
